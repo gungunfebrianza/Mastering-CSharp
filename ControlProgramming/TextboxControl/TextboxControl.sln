@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29503.13
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsApp1", "WindowsFormsApp1\WindowsFormsApp1.csproj", "{EAB4CA59-4B89-4A9D-B343-CEE4524CD5A3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextboxControl", "TextboxControl\TextboxControl.csproj", "{829508DC-D51F-4BE5-9B1B-374763DB8F81}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{EAB4CA59-4B89-4A9D-B343-CEE4524CD5A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EAB4CA59-4B89-4A9D-B343-CEE4524CD5A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EAB4CA59-4B89-4A9D-B343-CEE4524CD5A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EAB4CA59-4B89-4A9D-B343-CEE4524CD5A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{829508DC-D51F-4BE5-9B1B-374763DB8F81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{829508DC-D51F-4BE5-9B1B-374763DB8F81}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{829508DC-D51F-4BE5-9B1B-374763DB8F81}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{829508DC-D51F-4BE5-9B1B-374763DB8F81}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {FB395689-59C9-4AD4-A5F0-17C68A95B926}
+		SolutionGuid = {B6A8C5A5-2EF7-4362-889C-0EC39D05B463}
 	EndGlobalSection
 EndGlobal
