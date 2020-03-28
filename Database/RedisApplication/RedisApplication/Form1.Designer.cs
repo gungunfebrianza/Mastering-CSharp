@@ -41,9 +41,21 @@
             this.buttonClearValue = new System.Windows.Forms.Button();
             this.textBoxSetValue = new System.Windows.Forms.TextBox();
             this.textBoxSetKey = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.buttonPublish = new System.Windows.Forms.Button();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.textBoxPubTopic = new System.Windows.Forms.TextBox();
+            this.textBoxPubMessage = new System.Windows.Forms.TextBox();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.buttonPubClear = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            this.groupBox3.SuspendLayout();
+            this.groupBox5.SuspendLayout();
+            this.groupBox4.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -157,11 +169,101 @@
             this.textBoxSetKey.TabIndex = 0;
             this.textBoxSetKey.Text = "<Key>";
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(419, 357);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(152, 44);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "Subscriber 1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(577, 357);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(152, 44);
+            this.button2.TabIndex = 3;
+            this.button2.Text = "Subscriber 2";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.buttonPubClear);
+            this.groupBox3.Controls.Add(this.buttonPublish);
+            this.groupBox3.Controls.Add(this.groupBox4);
+            this.groupBox3.Controls.Add(this.groupBox5);
+            this.groupBox3.Location = new System.Drawing.Point(13, 180);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(400, 226);
+            this.groupBox3.TabIndex = 4;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Publisher";
+            // 
+            // buttonPublish
+            // 
+            this.buttonPublish.Location = new System.Drawing.Point(7, 183);
+            this.buttonPublish.Name = "buttonPublish";
+            this.buttonPublish.Size = new System.Drawing.Size(86, 33);
+            this.buttonPublish.TabIndex = 0;
+            this.buttonPublish.Text = "Publish";
+            this.buttonPublish.UseVisualStyleBackColor = true;
+            this.buttonPublish.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // groupBox5
+            // 
+            this.groupBox5.Controls.Add(this.textBoxPubTopic);
+            this.groupBox5.Location = new System.Drawing.Point(6, 21);
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.Size = new System.Drawing.Size(388, 55);
+            this.groupBox5.TabIndex = 0;
+            this.groupBox5.TabStop = false;
+            this.groupBox5.Text = "Topic";
+            // 
+            // textBoxPubTopic
+            // 
+            this.textBoxPubTopic.Location = new System.Drawing.Point(7, 22);
+            this.textBoxPubTopic.Name = "textBoxPubTopic";
+            this.textBoxPubTopic.Size = new System.Drawing.Size(374, 22);
+            this.textBoxPubTopic.TabIndex = 0;
+            // 
+            // textBoxPubMessage
+            // 
+            this.textBoxPubMessage.Location = new System.Drawing.Point(6, 21);
+            this.textBoxPubMessage.Multiline = true;
+            this.textBoxPubMessage.Name = "textBoxPubMessage";
+            this.textBoxPubMessage.Size = new System.Drawing.Size(374, 61);
+            this.textBoxPubMessage.TabIndex = 5;
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.textBoxPubMessage);
+            this.groupBox4.Location = new System.Drawing.Point(7, 82);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(387, 88);
+            this.groupBox4.TabIndex = 1;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "Message";
+            // 
+            // buttonPubClear
+            // 
+            this.buttonPubClear.Location = new System.Drawing.Point(99, 183);
+            this.buttonPubClear.Name = "buttonPubClear";
+            this.buttonPubClear.Size = new System.Drawing.Size(86, 33);
+            this.buttonPubClear.TabIndex = 2;
+            this.buttonPubClear.Text = "Clear";
+            this.buttonPubClear.UseVisualStyleBackColor = true;
+            this.buttonPubClear.Click += new System.EventHandler(this.button4_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.groupBox3);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
@@ -172,6 +274,11 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox5.ResumeLayout(false);
+            this.groupBox5.PerformLayout();
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -192,6 +299,15 @@
         private System.Windows.Forms.Button buttonClearValue;
         private System.Windows.Forms.TextBox textBoxSetValue;
         private System.Windows.Forms.TextBox textBoxSetKey;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.Button buttonPubClear;
+        private System.Windows.Forms.Button buttonPublish;
+        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.TextBox textBoxPubMessage;
+        private System.Windows.Forms.GroupBox groupBox5;
+        private System.Windows.Forms.TextBox textBoxPubTopic;
     }
 }
 

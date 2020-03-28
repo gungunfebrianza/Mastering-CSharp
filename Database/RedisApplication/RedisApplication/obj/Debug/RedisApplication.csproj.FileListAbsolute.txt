@@ -28,3 +28,4 @@ E:\17. The Kaizer Arsenal - NET\C# - GITHUB\Mastering-CSharp\Database\RedisAppli
 E:\17. The Kaizer Arsenal - NET\C# - GITHUB\Mastering-CSharp\Database\RedisApplication\RedisApplication\obj\Debug\RedisApplication.csproj.CopyComplete
 E:\17. The Kaizer Arsenal - NET\C# - GITHUB\Mastering-CSharp\Database\RedisApplication\RedisApplication\obj\Debug\RedisApplication.exe
 E:\17. The Kaizer Arsenal - NET\C# - GITHUB\Mastering-CSharp\Database\RedisApplication\RedisApplication\obj\Debug\RedisApplication.pdb
+E:\17. The Kaizer Arsenal - NET\C# - GITHUB\Mastering-CSharp\Database\RedisApplication\RedisApplication\obj\Debug\RedisApplication.Form2.resources

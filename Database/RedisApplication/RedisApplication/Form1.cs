@@ -35,5 +35,26 @@ namespace RedisApplication
             MessageBox.Show("Stored on Redis " + i.ToString(), "Redis Application Dekstop");
             buttonClearValue.PerformClick();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            // grab an instance of an ISubscriber
+            var subscriber = redis.GetSubscriber();
+
+            // publish a message to the 'chat' channel
+            subscriber.Publish(textBoxPubTopic.Text, textBoxPubMessage.Text);
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            textBoxPubTopic.Clear();
+            textBoxPubMessage.Clear();
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            Form2 x = new Form2();
+            x.Show();
+        }
     }
 }
