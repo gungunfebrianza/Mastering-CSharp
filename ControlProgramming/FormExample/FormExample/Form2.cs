@@ -18,15 +18,21 @@ namespace FormExample
         }
 
         Form1 secondform = new Form1();
+        public static TextBox tb = new TextBox();
+
         private void button1_Click(object sender, EventArgs e)
         {
             //secondform.Show();
-            if (secondform.ShowDialog() == DialogResult.OK)
-            {
-                MessageBox.Show("OK", "Title", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            }
-            
-            
+            /*        if (secondform.ShowDialog() == DialogResult.OK)
+                    {
+                        MessageBox.Show("OK", "Title", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }*/
+            secondform.ShowDialog();
+        }
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+            tb = textBox1;
         }
     }
 }
