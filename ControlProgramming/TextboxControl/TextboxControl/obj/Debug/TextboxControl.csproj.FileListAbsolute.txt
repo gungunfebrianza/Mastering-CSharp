@@ -7,3 +7,4 @@ E:\17. The Kaizer Arsenal - NET\C# - GITHUB\Mastering-CSharp\ControlProgramming\
 E:\17. The Kaizer Arsenal - NET\C# - GITHUB\Mastering-CSharp\ControlProgramming\TextboxControl\TextboxControl\obj\Debug\TextboxControl.csproj.GenerateResource.cache
 E:\17. The Kaizer Arsenal - NET\C# - GITHUB\Mastering-CSharp\ControlProgramming\TextboxControl\TextboxControl\obj\Debug\TextboxControl.exe
 E:\17. The Kaizer Arsenal - NET\C# - GITHUB\Mastering-CSharp\ControlProgramming\TextboxControl\TextboxControl\obj\Debug\TextboxControl.pdb
+E:\17. The Kaizer Arsenal - NET\C# - GITHUB\Mastering-CSharp\ControlProgramming\TextboxControl\TextboxControl\obj\Debug\TextboxControl.csproj.CoreCompileInputs.cache

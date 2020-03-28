@@ -44,5 +44,16 @@ namespace TextboxControl
                 MessageBox.Show("You Press Z/z");
             }
         }
+
+        private void textBox4_TextChanged(object sender, EventArgs e)
+        {
+            textBox5.Text = textBox4.Text;
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            int i = int.Parse(textBox6.Text);
+            MessageBox.Show(i.ToString());
+        }
     }
 }

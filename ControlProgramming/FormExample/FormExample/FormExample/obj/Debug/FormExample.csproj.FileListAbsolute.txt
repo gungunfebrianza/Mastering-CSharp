@@ -1,0 +1,11 @@
+E:\17. The Kaizer Arsenal - NET\C# - GITHUB\Mastering-CSharp\ControlProgramming\FormExample\FormExample\FormExample\bin\Debug\FormExample.exe.config
+E:\17. The Kaizer Arsenal - NET\C# - GITHUB\Mastering-CSharp\ControlProgramming\FormExample\FormExample\FormExample\bin\Debug\FormExample.exe
+E:\17. The Kaizer Arsenal - NET\C# - GITHUB\Mastering-CSharp\ControlProgramming\FormExample\FormExample\FormExample\bin\Debug\FormExample.pdb
+E:\17. The Kaizer Arsenal - NET\C# - GITHUB\Mastering-CSharp\ControlProgramming\FormExample\FormExample\FormExample\obj\Debug\FormExample.csprojAssemblyReference.cache
+E:\17. The Kaizer Arsenal - NET\C# - GITHUB\Mastering-CSharp\ControlProgramming\FormExample\FormExample\FormExample\obj\Debug\FormExample.Form2.resources
+E:\17. The Kaizer Arsenal - NET\C# - GITHUB\Mastering-CSharp\ControlProgramming\FormExample\FormExample\FormExample\obj\Debug\FormExample.Properties.Resources.resources
+E:\17. The Kaizer Arsenal - NET\C# - GITHUB\Mastering-CSharp\ControlProgramming\FormExample\FormExample\FormExample\obj\Debug\FormExample.csproj.GenerateResource.cache
+E:\17. The Kaizer Arsenal - NET\C# - GITHUB\Mastering-CSharp\ControlProgramming\FormExample\FormExample\FormExample\obj\Debug\FormExample.csproj.CoreCompileInputs.cache
+E:\17. The Kaizer Arsenal - NET\C# - GITHUB\Mastering-CSharp\ControlProgramming\FormExample\FormExample\FormExample\obj\Debug\FormExample.exe
+E:\17. The Kaizer Arsenal - NET\C# - GITHUB\Mastering-CSharp\ControlProgramming\FormExample\FormExample\FormExample\obj\Debug\FormExample.pdb
+E:\17. The Kaizer Arsenal - NET\C# - GITHUB\Mastering-CSharp\ControlProgramming\FormExample\FormExample\FormExample\obj\Debug\FormExample.Form1.resources
