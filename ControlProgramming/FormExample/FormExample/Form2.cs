@@ -7,32 +7,42 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Globalization;
+using System.Threading;
 
 namespace FormExample
 {
-    public partial class Form2 : Form
+    public partial class Form1 : Form
     {
-        public Form2()
+        public Form1()
         {
             InitializeComponent();
         }
 
-        Form1 secondform = new Form1();
-        public static TextBox tb = new TextBox();
-
         private void button1_Click(object sender, EventArgs e)
         {
-            //secondform.Show();
-            /*        if (secondform.ShowDialog() == DialogResult.OK)
-                    {
-                        MessageBox.Show("OK", "Title", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    }*/
-            secondform.ShowDialog();
+            string changeCase = Form2.tb.Text;
+            if (radioButton1.Checked == true)
+            {
+                changeCase = changeCase.ToUpper();
+            }
+            else if (radioButton2.Checked == true)
+            {
+                changeCase = changeCase.ToLower();
+            }
+            else if (radioButton3.Checked == true)
+            {
+                CultureInfo properCase = Thread.CurrentThread.CurrentCulture;
+                TextInfo textInfoObject = properCase.TextInfo;
+                changeCase = textInfoObject.ToTitleCase(changeCase);
+            }
+            Form2.tb.Text = changeCase;
+            this.DialogResult = DialogResult.OK;
         }
 
-        private void Form2_Load(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
-            tb = textBox1;
+            this.DialogResult = DialogResult.Cancel;
         }
     }
 }

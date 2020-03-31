@@ -27,7 +27,7 @@ namespace RedisApplication
 
             // subscribe to a messages over the 'chat' channel
             subscriber.Subscribe("chat", (channel, message) => {
-                MessageBox.Show((string)message, "Redis App");
+                //MessageBox.Show((string)message, "Redis App");
             });
         }
     }
