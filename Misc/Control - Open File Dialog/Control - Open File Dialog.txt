@@ -1,0 +1,4 @@
+            if (openFileDialog1.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+            {
+                textBox1 .Text = openFileDialog1.FileName .ToString ();
+            }
