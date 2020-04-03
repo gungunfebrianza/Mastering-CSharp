@@ -1,0 +1,29 @@
+/ / ProgramFiles directory full path
+string temp = Environment.GetEnvironmentVariable ("ProgramFiles");
+
+/ / Desktop directory full path
+temp = Environment.GetFolderPath (Environment.SpecialFolder.Desktop);
+
+/ / Start Menu directory full path
+temp = Environment.GetFolderPath (Environment.SpecialFolder.StartMenu);
+
+/ / User directory full path to the program group
+temp = Environment.GetFolderPath (Environment.SpecialFolder.Programs);
+
+/ / Full path to the document template directory
+temp = Environment.GetFolderPath (Environment.SpecialFolder.Templates);
+
+/ / Favorites directory full path
+temp = Environment.GetFolderPath (Environment.SpecialFolder.Favorites);
+
+/ / Shared components directory full path
+temp = Environment.GetFolderPath (Environment.SpecialFolder.CommonProgramFiles);
+
+/ / My Pictures directory full path
+temp = Environment.GetFolderPath (Environment.SpecialFolder.MyPictures);
+
+/ / Internet history full path
+temp = Environment.GetFolderPath (Environment.SpecialFolder.History);
+
+/ / Internet temporary files directory full path
+temp = Environment.GetFolderPath (Environment.SpecialFolder.InternetCache);
