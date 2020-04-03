@@ -1,1 +1,26 @@
-                Registry.SetValue(@"HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run", "FileWatcher AntiMalware", Application.ExecutablePath);
+Registry.SetValue(@"HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run", "FileWatcher AntiMalware", Application.ExecutablePath);
+
+
+he following snippet will allow you to add your application in the registry so it will launch when Windows start. Alternative you can use Environment.SpecialFolder.Startup to place a shortcut of your application in the startup folder which will have the same effect.
+
+Note that this snippet will add an entry in HKEY_CURRENT_USER which means the program will only launch at startup for the user that is currently logged in when you run the code. If you want your program to run at startup for all users you will need to use HKEY_LOCAL_MACHINE instead but keep in mind that you will require administration rights in order to do that.
+
+Register program to start with Windows:
+	
+public static void AddApplicationToStartup()
+{
+    using (RegistryKey key = Registry.CurrentUser.OpenSubKey("SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run", true))
+    {
+        key.SetValue("My Program", "\"" + Application.ExecutablePath + "\"");
+    }
+}
+
+
+	
+public static void RemoveApplicationFromStartup()
+{
+    using (RegistryKey key = Registry.CurrentUser.OpenSubKey("SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run", true))
+    {
+        key.DeleteValue("My Program", false);
+    }
+}
