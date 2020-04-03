@@ -1,0 +1,26 @@
+Save
+
+void Button3Click(object sender, EventArgs e)
+{
+if (saveFileDialog2.ShowDialog() == DialogResult.OK)	
+{
+System.IO.StreamWriter sw = new System.IO.StreamWriter(saveFileDialog2.FileName);
+foreach (object item in listBox1.Items)
+sw.WriteLine(item.ToString());
+sw.Close();
+
+Load
+
+try
+            {
+                //memuat logs history
+                string[] items = File.ReadAllLines(@"C:\\logs.kaizer");
+                listBox1.Items.Clear(); // if necessary
+                listBox1.Items.AddRange(items);
+                listBox1.SelectedIndex = 0;
+            }
+            catch (System.Exception)
+            {
+                //tampilkan kotak pesan 
+                MessageBox.Show("First Time Exception", "Folder Lock", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
