@@ -1,0 +1,37 @@
+Benchmarking your code is very important since it allows you to pinpoint bottlenecks in your application and allows you to improve the overall performance of your software as well as learning which techniques are more taxing than others.
+
+For this example we are going to be using the Stopwatch class. This class will enable us to see how many milliseconds it required for our code to be executed so we can compare different methods or techniques.
+
+As an example, the code below checks the performance difference of a try/catch block in a loop vs the performance when not using one. Keep in mind that try/catch blocks are not that performance heavy if they don’t actually catch something but the performance gets hit a lot in cases a lot of exceptions are being thrown.
+
+Stopwatch sw = new Stopwatch();
+int test;
+ 
+//test 1
+sw.Start();
+test = 0;
+for (int i = 0; i < int.MaxValue; i++)
+{
+    test = i;
+}
+ 
+Console.WriteLine(sw.ElapsedMilliseconds);    // 7644
+sw.Reset();
+ 
+ 
+//test 2
+sw.Start();
+test = 0;
+for (int i = 0; i < int.MaxValue; i++)
+{
+    try
+    {
+        test = i;
+    }
+    catch { }
+}
+ 
+Console.WriteLine(sw.ElapsedMilliseconds);    // 8429
+sw.Reset();
+
+For even better results I would advise running each test 3 to 5 times and simply calculating the average time of execution.
