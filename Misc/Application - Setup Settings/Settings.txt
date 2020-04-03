@@ -1,0 +1,14 @@
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            //password pada setting pass dimuat di textbox2
+            textBox2.Text = Properties .Settings.Default.pass;
+        }
+
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            //password pada textbox2 disimpan di setting pass
+            Properties.Settings.Default.pass = textBox2 .Text ;
+
+            //password disimpan
+            Properties.Settings.Default.Save();
+        }

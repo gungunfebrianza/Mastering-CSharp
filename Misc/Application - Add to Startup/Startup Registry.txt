@@ -1,0 +1,1 @@
+                Registry.SetValue(@"HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run", "FileWatcher AntiMalware", Application.ExecutablePath);
