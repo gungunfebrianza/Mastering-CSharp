@@ -13,4 +13,18 @@ namespace TypeData
       Console.WriteLine($"score is {score.GetType()}"); //score is System.Int32
     }
   }
+
+  public class MyDetail
+  {
+    public string FirstName
+    {
+      get;
+      set;
+    }
+    public string LastName
+    {
+      get;
+      set;
+    }
+  }
 }

@@ -9,9 +9,9 @@
       "type": "coreclr",
       "request": "launch",
       "preLaunchTask": "build",
-      "program": "${workspaceFolder}/TypeInference/bin/Debug/netcoreapp3.1/TypeInference.dll",
+      "program": "${workspaceFolder}/JSON/bin/Debug/netcoreapp3.1/JSON.dll",
       "args": [],
-      "cwd": "${workspaceFolder}/TypeInference",
+      "cwd": "${workspaceFolder}/JSON",
       "console": "internalConsole",
       "stopAtEntry": false
     },
